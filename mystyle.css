@@ -1,0 +1,182 @@
+/************* CSS для слайд-шоу******/
+
+/* CSS Reset */
+.wrapper {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+/* Setup Tabs */
+ 
+.tabs{
+    background:#000;
+    width:125px; /* Width of Tab Image */
+    float: left;
+    list-style: none;
+    border-right:8px solid black;
+}
+
+.tab{
+    height:75px; /* Height of Tab Image */
+}
+
+/* Setup Tab so normal opacity is 40 and rollover is 100 */
+ul li a img{
+    /* for IE */
+    /*-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter:alpha(opacity=40);
+   
+    /* CSS3 standard */
+    opacity:0.4;
+   
+}
+
+/* Change Opacity to 100% on roll over */
+ul li a:hover img{
+       
+    /* for IE */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter:alpha(opacity=100);
+     
+    /* CSS3 standard */
+    opacity:1.0;
+}
+ 
+/* Places images to the right of the tabs,
+and hides non selected images */
+#images{
+    width:375px; 
+    height:225px; 
+    overflow:hidden;  /* Hides the non selected images */
+    float:left;
+}
+
+/* Places a black border around the entire viewer
+and centers it on the screen */
+#wrapper{
+    width:525px;
+    height:225px;
+    border:8px solid black;
+    margin:0px auto;
+}
+
+/************* конец CSS для слайд-шоу******/
+
+ul {
+ font-size: 11pt;
+
+}
+strong{
+	font-family: 'JoannaSansNova', sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #212529;
+}
+li {
+	font-family: 'JoannaSansNova', sans-serif;
+    font-weight: normal;
+    line-height: 0;
+    color: #212529;
+    text-align: left;
+}
+blockquote {
+    position: relative;
+    padding: 15px 22px 12px 25px;
+    margin: 16px 0 19px;
+    background: #f3f3f3;
+    border: 1px solid #dfdfdf;
+    border-left: 2px solid #3965a8;
+    font: italic normal 14px Arial, sans-serif;
+    color: #405778;
+    }
+h1 {
+    font-family: cursive;
+    font-style: italic;   
+   }
+ ul {
+    /*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+    font-size: 11pt; /* Размер шрифта в пунктах */ 
+   }
+   .main_text {
+    font-family: font-family: inherit;; 
+    font-size: 15pt; /* Размер шрифта в пунктах */ 
+    font-weight: inherit;
+    color: inherit;
+    font-style: italic; /* Курсивное начертание */
+   }
+   p {
+    font-family: font-family: inherit;; 
+    font-size: 15pt; /* Размер шрифта в пунктах */ 
+    font-weight: inherit;
+    color: inherit;
+    font-style: italic; /* Курсивное начертание */
+   }
+ body {
+    background-image: url(Image/bg.jpg);
+    background-attachment: fixed;
+    }
+    .transparent-style{
+
+    background-color: #ffffff;
+    opacity: 0.4;
+}
+ ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
